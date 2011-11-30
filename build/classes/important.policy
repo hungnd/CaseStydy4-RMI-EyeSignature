@@ -1,0 +1,10 @@
+grant {
+    permission java.io.FilePermission "eye1.jpg", "read,write";
+    permission java.io.FilePermission "eye2.jpg", "read,write";
+    permission java.io.FilePermission "eye3.jpg", "read,write";
+    permission java.net.SocketPermission "127.0.0.1:11111", "accept,connect,resolve";
+};
+
+grant codeBase "file:/Users/hung/NetBeansProjects/CaseStydy4-RMI-EyeSignature/src/Server/" {
+    permission java.security.AllPermission;
+};
